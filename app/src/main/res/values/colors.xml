@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="start_gradient">#16E1F0</color>
+    <color name="end_gradient">#64E5AD</color>
+    <color name="primary_blue">#2DDBDE</color>
+    <color name="light_blue">#D3E9F6</color>
+
 </resources>

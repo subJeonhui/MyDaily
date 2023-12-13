@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyDaily</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diary_write_title">title</string>
+    <string name="diary_write_date">date</string>
+    <string name="diary_write_emotion">emotion</string>
+    <string name="add">add</string>
+    <string name="diary_write_title_desc">write title</string>
+    <string name="write">write</string>
+    <string name="diary_write_content">content</string>
+    <string name="diary_write_content_desc">write content</string>
+    <string name="close">close</string>
 </resources>
