@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/diaryFragment">
+
+
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.jeonhui.mydaily.DairyFragment"
+        tools:layout="@layout/fragment_diary">
+        <action
+            android:id="@+id/action_diaryFragment_to_writeDiaryFragment"
+            app:destination="@id/writeDiaryFragment"/>
+        <action
+            android:id="@+id/action_diaryFragment_to_detailDiaryFragment"
+            app:destination="@id/detailDiaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/writeDiaryFragment"
+        android:name="com.jeonhui.mydaily.WriteDiaryFragment"
+        tools:layout="@layout/fragment_write_diary">
+        <action
+            android:id="@+id/action_writeDiaryFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailDiaryFragment"
+        android:name="com.jeonhui.mydaily.DetailDiaryFragment"
+        tools:layout="@layout/fragment_detail_diary">
+        <action
+            android:id="@+id/action_detailDiaryFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment"/>
+
+        <action
+            android:id="@+id/action_detailDiaryFragment_to_diaryEditFragment"
+            app:destination="@id/editDiaryFragment"/>
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/editDiaryFragment"
+        android:name="com.jeonhui.mydaily.EditDiaryFragment"
+        tools:layout="@layout/fragment_edit_diary">
+        <action
+            android:id="@+id/action_editDiaryFragment_to_diaryFragment"
+            app:destination="@id/diaryFragment"/>
+    </fragment>
+
+
+</navigation>
